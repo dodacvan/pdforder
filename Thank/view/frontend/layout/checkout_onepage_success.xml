@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+     <body>		
+        <referenceContainer name="content">			
+			<!-- <block class="Mageplaza\Thank\Block\Thank\Index" name="thank_index" template="thank/index.phtml">
+			</block> -->
+      			<referenceBlock name="checkout.success" class="Mageplaza\Thank\Block\Thank\Index">
+          				<action method="setTemplate">
+              			<argument name="template" xsi:type="string">Mageplaza_Thank::thank/index.phtml</argument>
+         				 </action>	
+      			</referenceBlock> 
+
+            <!-- <block class="Magento\CatalogWidget\Block\Product\ProductsList"  name="listproduct" template="Mageplaza_Thank::thank/listproduct.phtml">
+              </block> -->  
+              <block class="Mageplaza\Thank\Block\Thank\Product"  name="listproduct" template="Mageplaza_Thank::thank/listproduct.phtml">
+              </block>  
+        </referenceContainer>   
+
+    </body>
+</page>

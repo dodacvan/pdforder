@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mageplaza_Thank::sociallogin" title="Thank" module="Mageplaza_Thank" sortOrder="34" resource="Mageplaza_Thank::sociallogin"/>
+        <add id="Mageplaza_Thank::settings" title="Settings" module="Mageplaza_Thank" sortOrder="10" action="adminhtml/system_config/edit/section/sociallogin" resource="Mageplaza_Thank::settings" parent="Mageplaza_Thank::sociallogin"/>
+        <add id="Mageplaza_Thank::cuu" title="CuU" module="Mageplaza_Thank" sortOrder="20" action="thank/thank/index" resource="Mageplaza_Thank::sociallogin" parent="Mageplaza_Thank::sociallogin"/>
+    </menu>
+</config>
